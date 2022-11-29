@@ -1,0 +1,23 @@
+<script>
+    function launchMyForm()
+    {
+       var myForm = document.createElement("FORM");
+       myForm.setAttribute("id","TestForm");
+       document.body.appendChild(myForm);
+    
+    // this will create a new FORM which is mapped to the Java Object of myForm, with an id of TestForm. Equivalent to: <form id="TestForm"></form>
+    
+       var myInput = document.createElement("INPUT");
+       myInput.setAttribute("id","MyInput");
+       myInput.setAttribute("type","text");
+       myInput.setAttribute("value","Heider");
+       document.getElementById("TestForm").appendChild(myInput);
+       
+    // To submit the form: 
+       myForm.method = "POST";
+       myForm.action = "whatever.aspx";  // or "response.php" 
+       myForm.submit();
+    
+    // This will create an INPUT equivalent to: <INPUT id="MyInput" type="text" value="Heider" /> and then assign it to be inside the TestForm tags. 
+    }
+    </script>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>simulasi lsp</title>
+    <link rel="stylesheet" href="stylelsp.css">
+</head>
+<body>
+    <table>
+        <tr>
+            <td>
+                <form onsubmit="event.preventDefault();onFormSubmit();" autocomplete="off">
+                    <div>
+                        <label >Nama Siswa</label>
+                        <input type="text" name="Nama" id="Nama">
+                    </div>
+                    <div>
+                        <label >Kelas</label>
+                        <input type="text" name="Kelas" id="Kelas">
+                    </div>
+                    <div>
+                        <label >Jurusan</label>
+                        <input type="text" name="Jurusan" id="Jurusan">
+                    </div>
+                    <div>
+                        <label >Nilai Siswa</label>
+                        <input type="text" name="Nilai" id="Nilai">
+                    </div>
+                    <div class="from-acion-button">
+                        <input type="submit" value="submit">
+                    </div>
+                </form>
+            </td>
+            <td>
+                <table class="list" id="tabelsiswa">
+                    <thead>
+                        <tr>
+                            <th>Nama Siswa</th>
+                            <th>Kelas</th>
+                            <th>Jurusan</th>
+                            <th>Nilai Siswa</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+
+                    </tbody>
+                </table>
+            </td>
+        </tr>
+    </table>
+    <script src="script.js"></script>
+</body>
+</html>
